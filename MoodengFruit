@@ -1,0 +1,96 @@
+local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/natoloe009/SCRIPT-ROBLOX/main/Orion%20KaGa.lua'))()
+local Window = OrionLib:MakeWindow({Name = "Razer Hub |", HidePremium = false, SaveConfig = true, IntroEnabled = false, ConfigFolder = "RazerConfig"})
+
+-- Tab for NPC Targeting and Movement
+local Tab = Window:MakeTab({
+    Name = "Teleport",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+local Section = Tab:AddSection({
+    Name = "Instant Teleport"
+})
+
+local toggle = false
+
+-- Toggle Button
+Section:AddButton({
+    Name = "Starter Island",
+    Callback = function()
+        print("Clicked")
+        local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+        rootPart.CFrame = CFrame.new(6, 2, 2334)
+    end    
+})
+
+Section:AddButton({
+    Name = "Event Island",
+    Callback = function()
+        print("Clicked")
+        local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+        rootPart.CFrame = CFrame.new(1106, 20, 1503)
+    end    
+})
+
+Section:AddButton({
+    Name = "Boss Island",
+    Callback = function()
+        print("Clicked")
+        local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+        rootPart.CFrame = CFrame.new(1447, 5, 3274)
+    end    
+})
+
+Section:AddButton({
+    Name = "Marine Island",
+    Callback = function()
+        print("Clicked")
+        local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+        rootPart.CFrame = CFrame.new(387, 12, 1162)
+    end    
+})
+
+Section:AddButton({
+    Name = "Factory Island",
+    Callback = function()
+        print("Clicked")
+        local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+        rootPart.CFrame = CFrame.new(-1256, 2, 1465)
+    end    
+})
+
+Section:AddButton({
+    Name = "Cafe Island",
+    Callback = function()
+        print("Clicked")
+        local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+        rootPart.CFrame = CFrame.new(-316, -0, 1354)
+    end    
+})
+
+Section:AddButton({
+    Name = "Statue Island",
+    Callback = function()
+        print("Clicked")
+        local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+        rootPart.CFrame = CFrame.new(-1372, 1, 542)
+    end    
+})
+
+Section:AddButton({
+    Name = "Tunnel Island",
+    Callback = function()
+        print("Clicked")
+        local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+        rootPart.CFrame = CFrame.new(-1050, 0, 3363)
+    end    
+})
+
+Section:AddButton({
+    Name = "Half Village Island",
+    Callback = function()
+        print("Clicked")
+        local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+        rootPart.CFrame = CFrame.new(-3383, 1, 2676)
+    end    
+})
