@@ -104,9 +104,21 @@ Section:AddButton({
     end    
 })
 
+-- Tab for NPC Targeting and Movement
+local Tab = Window:MakeTab({
+    Name = "Auto Fish OP",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+local Section = Tab:AddSection({
+    Name = "Clicking"
+})
+
+local toggle = false
+
 -- Toggle Button
 Section:AddToggle({
-    Name = "Auto Fish OP",
+    Name = "Auto  Fish Super Fast",
     Default = false,
     Callback = function(state)
         toggle = state
