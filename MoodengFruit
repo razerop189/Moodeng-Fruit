@@ -151,7 +151,7 @@ local toggle = false
 
 -- Toggle Button
 Section:AddButton({
-    Name = "Starter Island",
+    Name = "visual 10x gamepass drop",
     Callback = function()
         print("Clicked")
         game:GetService("Players").LocalPlayer.DataV2.GamePass.DropX10.Value = true
