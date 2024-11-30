@@ -136,3 +136,24 @@ Section:AddToggle({
         end
     end
 })
+
+-- Tab for NPC Targeting and Movement
+local Tab = Window:MakeTab({
+    Name = "Other",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+local Section = Tab:AddSection({
+    Name = "Bruh"
+})
+
+local toggle = false
+
+-- Toggle Button
+Section:AddButton({
+    Name = "Starter Island",
+    Callback = function()
+        print("Clicked")
+        game:GetService("Players").LocalPlayer.DataV2.GamePass.DropX10.Value = true
+    end    
+})
