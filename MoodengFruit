@@ -103,3 +103,24 @@ Section:AddButton({
         rootPart.CFrame = CFrame.new(-2316, 6, 3446)
     end    
 })
+
+-- Toggle Button
+Section:AddToggle({
+    Name = "Auto Fish OP",
+    Default = false,
+    Callback = function(state)
+        toggle = state
+        if toggle then
+            spawn(function()
+                while toggle do
+                    task.wait() -- Wait for 1 second
+                    pcall(function()
+                        for i = 0, 35 do
+  fireproximityprompt(workspace.Map["Frtee Rewerds"].M1Q9_M1Q9.ProximityPrompt)
+                        end
+                    end)
+                end
+            end)
+        end
+    end
+})
