@@ -78,11 +78,11 @@ Section:AddButton({
 })
 
 Section:AddButton({
-    Name = "Tunnel Island",
+    Name = "Okarun Island",
     Callback = function()
         print("Clicked")
         local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
-        rootPart.CFrame = CFrame.new(-1050, 0, 3363)
+        rootPart.CFrame = CFrame.new(-1087, 3, 3577)
     end    
 })
 
@@ -96,11 +96,20 @@ Section:AddButton({
 })
 
 Section:AddButton({
-    Name = "Shadow Jungle",
+    Name = "Shadow Jungle Island",
     Callback = function()
         print("Clicked")
         local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
         rootPart.CFrame = CFrame.new(-2316, 6, 3446)
+    end    
+})
+
+Section:AddButton({
+    Name = "Town Island",
+    Callback = function()
+        print("Clicked")
+        local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+        rootPart.CFrame = CFrame.new(-2735, 22, 653)
     end    
 })
 
